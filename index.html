@@ -1,33 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Déclare le type de document comme étant HTML5 -->
+<html lang="en"> <!-- Début du document HTML avec la langue définie en anglais -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
-    <title>Exercice samuel</title>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 pour supporter les caractères spéciaux -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet l'adaptation du site aux écrans mobiles -->
+    
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style externe -->
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon"> <!-- Ajoute une icône de raccourci (favicon) pour l'onglet du navigateur -->
+    
+    <title>Exercice samuel</title> <!-- Définit le titre de la page affiché dans l'onglet du navigateur -->
 </head>
-    <body>
-        <main>
-            <div class="header">
-                <div class="titleandimg">
-                    <a href="#"><img src="img/logo.png" alt="logo"></a>
-                    <h1 class="logoname">ube</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="#">home</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">news</a></li>
-                        <li><a href="#">contacts</a></li>
-                        <li><a href="#">about</a></li>
-                    </ul>
-                </nav>
+<body> <!-- Début du corps de la page -->
+
+    <main> <!-- Élément principal de la page -->
+        
+        <div class="header"> <!-- Conteneur de l'en-tête de la page -->
+            
+            <div class="titleandimg"> <!-- Conteneur regroupant le logo et le titre -->
+                <a href="#"> <!-- Lien cliquable qui ne mène à rien (ancre vide) -->
+                    <img src="img/logo.png" alt="logo"> <!-- Image du logo avec un texte alternatif en cas de non affichage -->
+                </a>
+                <h1 class="logoname">ube</h1> <!-- Titre du site avec une classe pour le styliser -->
             </div>
-            <div class="contents">
-                <p class="msg">welcome in the bertoua university website</p>
-                <button>Visite us</button>
-            </div>
-        </main>
-    </body>
-</html>
+            
+            <nav> <!-- Barre de navigation -->
+                <ul> <!-- Liste non ordonnée pour les liens du menu -->
+                    <li class="active"><a href="#">home</a></li> <!-- Élément actif du menu (page actuelle) -->
+                    <li><a href="#">blog</a></li> <!-- Lien vers la section blog -->
+                    <li><a href="#">news</a></li> <!-- Lien vers la section news -->
+                    <li><a href="#">contacts</a></li> <!-- Lien vers la section contacts -->
+                    <li><a href="#">about</a></li> <!-- Lien vers la section about (À propos) -->
+                </ul>
+            </nav>
+
+        </div> <!-- Fin du conteneur de l'en-tête -->
+
+        <div class="contents"> <!-- Conteneur du contenu principal -->
+            <p class="msg">welcome in the bertoua university website</p> <!-- Message d'accueil avec une classe pour le styliser -->
+            <button>Visite us</button> <!-- Bouton d'invitation à visiter le site -->
+        </div>
+
+    </main> <!-- Fin de l'élément principal -->
+
+</body> <!-- Fin du corps du document -->
+</html> <!-- Fin du document HTML -->
