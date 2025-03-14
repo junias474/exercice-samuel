@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Déclare le type de document comme étant HTML5 et spécifie que la langue du document est l'anglais -->
 <head>
     <meta charset="UTF-8">
+    <!-- Spécifie l'encodage des caractères utilisé dans le document (UTF-8) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configure la fenêtre d'affichage pour s'adapter à la largeur de l'écran de l'appareil et définit un niveau de zoom initial de 1.0 -->
     <link rel="stylesheet" href="style.css">
+    <!-- Lien vers une feuille de style CSS externe nommée style.css -->
     <title>Tableau</title>
+    <!-- Définit le titre de la page qui sera affiché dans l'onglet du navigateur -->
 </head>
+<!-- Ferme la section d'en-tête du document -->
 <body>
+    <!-- Ouvre la section du corps du document, qui contient le contenu visible de la page -->
     <button id="addRowBtn">Ajouter un individu</button>
+    <!-- Crée un bouton avec l'ID addRowBtn et le texte "Ajouter un individu" -->
     <table id="table">
+        <!-- Crée une table avec l'ID table -->
         <tr>
+            <!-- Crée une ligne de tableau -->
             <th>ID</th><th>NOM</th><th>PRENOM</th><th>TEL</th><th>MOY</th>
+            <!-- Crée des cellules d'en-tête de tableau avec les titres ID, NOM, PRENOM, TEL, et MOY -->
         </tr>
         <tr>
+            <!-- Crée une autre ligne de tableau -->
             <td>1</td><td>Samuel</td><td>le programeur</td><td>691886649</td><td>10 <sup>2</sup></td>
+            <!-- Crée des cellules de tableau avec les valeurs 1, Samuel, le programeur, 691886649, et 10^2 -->
         </tr>
     </table>
+    <!-- Ferme la table -->
     <script src="script.js"></script>
+    <!-- Lien vers un fichier JavaScript externe nommé script.js -->
 </body>
+<!-- Ferme la section du corps du document -->
 </html>
+<!-- Ferme la balise HTML -->
