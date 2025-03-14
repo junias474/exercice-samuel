@@ -1,39 +1,70 @@
-         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 60%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        th, td {
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+body {
+    font-family: Arial, sans-serif;
+    /* Définit la police de caractères du corps du document comme Arial, avec une alternative sans-serif */
+    background-color: #f4f4f4;
+    /* Définit la couleur de fond du corps du document */
+    margin: 0;
+    /* Supprime les marges par défaut du corps du document */
+    padding: 0;
+    /* Supprime les espacements internes par défaut du corps du document */
+    display: flex;
+    /* Utilise le modèle de boîte flexible pour le corps du document */
+    flex-direction: column;
+    /* Aligne les éléments enfants en colonne */
+    justify-content: center;
+    /* Centre les éléments enfants verticalement */
+    align-items: center;
+    /* Centre les éléments enfants horizontalement */
+    height: 100vh;
+    /* Définit la hauteur du corps du document à 100% de la hauteur de la fenêtre */
+}
+
+table {
+    margin: 20px auto;
+    /* Ajoute une marge de 20 pixels en haut et en bas, et centre horizontalement */
+    border-collapse: collapse;
+    /* Fusionne les bordures des cellules adjacentes */
+    width: 60%;
+    /* Définit la largeur de la table à 60% de la largeur du conteneur parent */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre portée légère autour de la table */
+    background-color: #fff;
+    /* Définit la couleur de fond de la table */
+}
+
+th, td {
+    padding: 12px 15px;
+    /* Ajoute un espacement interne de 12 pixels en haut et en bas, et de 15 pixels à gauche et à droite */
+    border: 1px solid #ddd;
+    /* Ajoute une bordure de 1 pixel de couleur gris clair autour des cellules */
+    text-align: left;
+    /* Aligne le texte à gauche dans les cellules */
+}
+
+th {
+    background-color: #f2f2f2;
+    /* Définit la couleur de fond des cellules d'en-tête */
+    font-weight: bold;
+    /* Définit le texte des cellules d'en-tête en gras */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Définit la couleur de fond des lignes paires de la table */
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    /* Change la couleur de fond des lignes au survol */
+}
+
+button {
+    padding: 10px 20px;
+    /* Ajoute un espacement interne de 10 pixels en haut et en bas, et de 20 pixels à gauche et à droite */
+    margin-top: 20px;
+    /* Ajoute une marge de 20 pixels en haut du bouton */
+    font-size: 16px;
+    /* Définit la taille de la police du bouton à 16 pixels */
+    cursor: pointer;
+    /* Change le curseur en pointeur lorsque l'utilisateur survole le bouton */
+}
