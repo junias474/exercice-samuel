@@ -1,98 +1,39 @@
-*{
-    margin: 0; /* Supprime les marges par défaut de tous les éléments */
-    padding: 0; /* Supprime les espaces internes par défaut de tous les éléments */
-}
-
-main::before {
-    content: ''; /* Ajoute un élément vide avant l'élément <main> */
-    width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
-    height: 100vh; /* Hauteur de 100% de la hauteur de l'écran (viewport) */
-    display: block; /* S'assure que cet élément est affiché comme un bloc */
-    background-image: url(img/background.webp); /* Définit une image d'arrière-plan */
-    background-position: center; /* Centre l'image d'arrière-plan */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-size: cover; /* Ajuste l'image pour qu'elle couvre tout l'élément */
-    position: absolute; /* Positionne l'élément de manière absolue par rapport à <main> */
-    opacity: 0.20; /* Rend l'image d'arrière-plan légèrement transparente */
-    z-index: -1; /* Place l'élément en arrière-plan derrière le contenu principal */
-}
-
-main .header {
-    display: flex; /* Active le modèle de boîte flexible pour l'alignement */
-    justify-content: space-between; /* Espacement maximal entre les éléments */
-    align-items: center; /* Centre verticalement les éléments */
-    padding: 4px auto; /* Ajoute un espacement autour des éléments */
-}
-
-main .header .titleandimg {
-    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
-    justify-content: space-between; /* Espacement équilibré entre les éléments */
-    align-items: center; /* Centre les éléments verticalement */
-}
-
-main .header .titleandimg a {
-    text-decoration: none; /* Supprime le soulignement des liens */
-}
-
-main .header .titleandimg a img {
-    width: 50px; /* Définit la largeur de l'image */
-    height: 50px; /* Définit la hauteur de l'image */
-    border-radius: 50%; /* Rend l'image circulaire */
-}
-
-main .header .titleandimg .logoname {
-    text-transform: uppercase; /* Met le texte en majuscules */
-    font-weight: bold; /* Applique une police en gras */
-    font-size: 45px; /* Définit la taille du texte */
-}
-
-main .header nav ul {
-    list-style: none; /* Supprime les puces de la liste */
-    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
-    justify-content: space-between; /* Espacement équilibré entre les éléments */
-    align-items: center; /* Centre les éléments verticalement */
-}
-
-main .header nav ul li {
-    padding-right: 10px; /* Ajoute un espace entre les éléments de la liste */
-}
-
-main .header nav ul li .active {
-    text-decoration: underline; /* Souligne l'élément actif du menu */
-}
-
-main .header nav ul li a {
-    text-decoration: none; /* Supprime le soulignement des liens */
-    font-size: 20px; /* Définit la taille de la police */
-    font-family: Verdana; /* Définit la police de caractères */
-    text-transform: uppercase; /* Convertit le texte en majuscules */
-    color: rgb(28, 129, 245); /* Définit la couleur du texte */
-}
-
-main .contents p {
-    text-align: center; /* Centre le texte */
-    text-transform: uppercase; /* Met le texte en majuscules */
-    font-size: 45px; /* Définit la taille du texte */
-    font-weight: 900; /* Applique une police très épaisse */
-    margin-top: 270px; /* Ajoute un espacement en haut pour le positionner plus bas */
-}
-
-main .contents button {
-    margin-left: 45%; /* Déplace le bouton vers la droite pour le centrer approximativement */
-    margin-top: 10px; /* Ajoute un petit espacement en haut */
-    font-size: 20px; /* Définit la taille du texte */
-    font-weight: bold; /* Met le texte en gras */
-    font-family: sans-serif; /* Applique une police sans-serif */
-    cursor: pointer; /* Change le curseur en pointeur au survol */
-    padding: 6px; /* Ajoute un espace intérieur */
-    width: 140px; /* Définit la largeur du bouton */
-    outline: none; /* Supprime le contour du bouton */
-    border-radius: 8px; /* Arrondit les bords du bouton */
-    transition: 0.5s ease; /* Ajoute un effet de transition fluide */
-    background-color: grey; /* Définit la couleur de fond par défaut */
-}
-
-main .contents button:hover {
-    color: #292828; /* Change la couleur du texte au survol */
-    background-color: rgb(23, 238, 23); /* Change la couleur de fond en vert au survol */
-}
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
