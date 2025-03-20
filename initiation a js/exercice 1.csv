@@ -1,0 +1,10 @@
+Étape,Description
+1,"Déclare trois variables : nom (chaîne de caractères), age (nombre), estEtudiant (booléen)."
+2,"Affiche ces informations dans la console sous le format :"
+,"Bonjour, je m'appelle [nom]."
+,"J'ai [age] ans."
+,"Suis-je étudiant ? [estEtudiant]"
+3,"Déclare les variables a = 10 et b = 4."
+,"Calcule et affiche : somme, différence, produit, division et reste de la division de a par b."
+4,"Affiche le double de ton âge."
+Bonus,"Essaie d'afficher un message personnalisé en fonction de l'âge."
